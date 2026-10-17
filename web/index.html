@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TelcoPulse Omni-BSS | Enterprise Telecom SLA, Legal & Contract Suite</title>
+  <meta name="description" content="Tier-1 Telecom Operator & Software Provider Enterprise SaaS Contracts, SLA/SLO Framework, Regulatory Compliance and Junior Engineer Guide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <!-- Top Navigation Bar -->
+  <header class="navbar" id="topNavbar">
+    <div class="nav-container">
+      <div class="brand-group">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">TelcoPulse <span class="badge-tag">Omni-BSS Suite</span></span>
+          <span class="brand-subtitle">Tier-1 Telecom & SaaS Legal Framework</span>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#overview" class="nav-link active" data-nav="overview">Genel Bakış</a>
+        <a href="#contracts" class="nav-link" data-nav="contracts">Sözleşmeler</a>
+        <a href="#calculator" class="nav-link" data-nav="calculator">SLA Simülatörü</a>
+        <a href="#guide" class="nav-link" data-nav="guide">Mühendis Rehberi</a>
+        <a href="#quiz" class="nav-link" data-nav="quiz">Acemi Sınavı</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button id="btnLangTR" class="lang-btn active" title="Türkçe">TR</button>
+          <button id="btnLangEN" class="lang-btn" title="English">EN</button>
+        </div>
+        <a href="https://github.com/aliturgutbozkurt/telecom-saas-contracts-sla" target="_blank" class="github-btn" id="githubRepoLink">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="overview">
+    <div class="hero-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="live-dot"></span>
+        <span id="heroBadgeText">Tier-1 Telekom & Bulut-Yerel SaaS Sözleşme Süiti</span>
+      </div>
+      <h1 class="hero-title" id="heroTitle">
+        Telekom Operatörü & SaaS Sağlayıcı<br>
+        <span class="gradient-text">Kurumsal SLA, Hukuk ve Mühendislik Süiti</span>
+      </h1>
+      <p class="hero-desc" id="heroDesc">
+        <strong>TürkTel Global İletişim A.Ş.</strong> (48M Abone) ile <strong>TelcoCloud A.Ş.</strong> arasındaki 
+        25.000 TPS, %99.999 Çekirdek Uptime, GSMA eSIM ve BTK/KVKK uyumlu gerçek zamanlı BSS projesinin 
+        tüm yasal sözleşmeleri, teknik şartnameleri ve acemi mühendis rehberi.
+      </p>
+
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">99.999%</div>
+          <div class="stat-label">Core Uptime (Five Nines)</div>
+          <div class="stat-sub">Ayda maks. 26 sn kesinti</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">25,000 TPS</div>
+          <div class="stat-label">Peak Throughput</div>
+          <div class="stat-sub">5G CHF & BSS İşlemi</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">&lt; 45 ms</div>
+          <div class="stat-label">p99 Latency Eşiği</div>
+          <div class="stat-sub">Gerçek zamanlı derecelendirme</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">RPO = 0</div>
+          <div class="stat-label">Zero Data Loss DR</div>
+          <div class="stat-sub">İstanbul - Ankara Active/Active</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Contract Browser -->
+  <section class="section contracts-section" id="contracts">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">YASAL & TEKNİK DOKÜMANTASYON</div>
+        <h2 class="section-title" id="contractsHeading">Kurumsal Sözleşme Paketi</h2>
+        <p class="section-desc" id="contractsSub">
+          İki dilde (Türkçe & İngilizce) hazırlanmış, telekomünikasyon sektörüne özel 11 tam kapsamlı yasal enstrüman.
+        </p>
+      </div>
+
+      <div class="contract-grid" id="contractCardsContainer">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SLA & Penalty Simulator -->
+  <section class="section calc-section" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">CANLI SİMÜLATÖR</div>
+        <h2 class="section-title">Telekom SLA ve Hizmet Kredisi (Ceza) Hesaplayıcı</h2>
+        <p class="section-desc">
+          Aylık çalışma oranını, P1 kesinti süresini ve abone sayısını değiştirerek faturadan kesilecek ceza miktarını anlık simüle edin.
+        </p>
+      </div>
+
+      <div class="calc-wrapper">
+        <div class="calc-controls">
+          <div class="input-card">
+            <div class="input-header">
+              <label for="uptimeSlider">Gerçekleşen Aylık Çekirdek Uptime (%)</label>
+              <span class="value-badge" id="uptimeVal">99.980%</span>
+            </div>
+            <input type="range" id="uptimeSlider" min="99.00" max="99.999" step="0.005" value="99.980">
+            <div class="slider-marks">
+              <span>%99.00</span>
+              <span>%99.50</span>
+              <span>%99.90</span>
+              <span>%99.95</span>
+              <span>%99.999</span>
+            </div>
+          </div>
+
+          <div class="input-card">
+            <div class="input-header">
+              <label for="p1DurationSlider">P1 Kritik Kesinti Süresi (Dakika)</label>
+              <span class="value-badge" id="p1Val">35 Dakika</span>
+            </div>
+            <input type="range" id="p1DurationSlider" min="0" max="180" step="5" value="35">
+            <div class="slider-marks">
+              <span>0 dk</span>
+              <span>60 dk (MTTR Sınırı)</span>
+              <span>120 dk</span>
+              <span>180 dk</span>
+            </div>
+          </div>
+
+          <div class="input-card">
+            <div class="input-header">
+              <label for="subscribersSlider">Aktif Abone Sayısı (Milyon)</label>
+              <span class="value-badge" id="subsVal">32 Milyon</span>
+            </div>
+            <input type="range" id="subscribersSlider" min="5" max="60" step="1" value="32">
+            <div class="slider-marks">
+              <span>5M</span>
+              <span>20M (Baz Tier)</span>
+              <span>40M</span>
+              <span>60M</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="result-box main-box">
+            <div class="box-tag">KESİLECEK HİZMET KREDİSİ (CEZA)</div>
+            <div class="box-amount" id="penaltyAmountDisplay">$18,500</div>
+            <div class="box-percent" id="penaltyPercentDisplay">Aylık Faturanın %10'u</div>
+          </div>
+
+          <div class="result-metrics-grid">
+            <div class="metric-item">
+              <span class="m-label">Aylık İzin Verilen Kesinti</span>
+              <span class="m-val" id="allowedDowntimeDisplay">4.38 Dakika</span>
+            </div>
+            <div class="metric-item">
+              <span class="m-label">Gerçekleşen Kesinti Süresi</span>
+              <span class="m-val alert-text" id="actualDowntimeDisplay">8.64 Dakika</span>
+            </div>
+            <div class="metric-item">
+              <span class="m-label">Hata Bütçesi (Error Budget)</span>
+              <span class="m-val" id="errorBudgetStatusDisplay">%197 Tüketildi (AŞILDI)</span>
+            </div>
+            <div class="metric-item">
+              <span class="m-label">Aylık Baz SaaS Bedeli</span>
+              <span class="m-val" id="baseFeeDisplay">$245,000 / Ay</span>
+            </div>
+          </div>
+
+          <div class="compliance-badge-banner" id="complianceBanner">
+            <span class="status-icon">⚠️</span>
+            <span id="complianceText">SLA İhlali Mevcut: Faturaya %10 ceza kesintisi uygulanır. Yeni özellik dağıtımları durdurulmalıdır.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Junior Engineer Guide Showcase -->
+  <section class="section guide-section" id="guide">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">EĞİTİM & ZİHNİYET DÖNÜŞÜMÜ</div>
+        <h2 class="section-title">Acemi Yazılım Mühendisi İçin Sözleşme Rehberi</h2>
+        <p class="section-desc">
+          "Ben sadece kod yazarım, hukuki sözleşmeler beni niye ilgilendirsin?" diyen bir yazılımcının hayatını, kariyerini ve şirketini kurtaracak pratik dersler.
+        </p>
+      </div>
+
+      <div class="guide-grid" id="guideChaptersContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Junior Engineer Interactive Quiz -->
+  <section class="section quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">BİLGİNİ TEST ET</div>
+        <h2 class="section-title">Acemi Mühendis Telekom Sözleşme Sınavı</h2>
+        <p class="section-desc">
+          Aşağıdaki gerçek hayat senaryolarında doğru hamleyi yapabilir misin? 5 soruyu çöz ve seviyeni gör!
+        </p>
+      </div>
+
+      <div class="quiz-card" id="quizContainer">
+        <div class="quiz-header">
+          <span class="quiz-step" id="quizProgress">Soru 1 / 5</span>
+          <span class="quiz-score" id="quizScore">Skor: 0</span>
+        </div>
+        <div class="quiz-body">
+          <h3 class="quiz-question" id="quizQuestionText">Soru yükleniyor...</h3>
+          <div class="quiz-options" id="quizOptionsContainer">
+            <!-- Options rendered here -->
+          </div>
+          <div class="quiz-explanation" id="quizExplanation" style="display: none;"></div>
+        </div>
+        <div class="quiz-footer">
+          <button class="btn btn-primary" id="btnNextQuestion" style="display: none;">Sonraki Soru &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Document Reader Modal -->
+  <div class="modal-backdrop" id="docModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-code" id="modalDocCode">TR-TELCO-DOC-01</span>
+          <h3 class="modal-title" id="modalDocTitle">Doküman Başlığı</h3>
+        </div>
+        <button class="modal-close" id="btnModalClose">&times;</button>
+      </div>
+      <div class="modal-body" id="modalDocContent">
+        <!-- Rendered document markdown/html -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btnModalClose2">Kapat</button>
+        <button class="btn btn-primary" id="btnCopyDocLink">Bağlantıyı Kopyala</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <strong>TelcoPulse Omni-BSS & eSIM Suite</strong>
+        <p>Tier-1 Telekomünikasyon ve Bulut-Yerel SaaS Hukuk & SLA Kütüphanesi.</p>
+        <p class="copyright">&copy; 2026 Ali Turgut Bozkurt. MIT Lisansı ile açık kaynak olarak sunulmuştur.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#overview">Genel Bakış</a>
+        <a href="#contracts">Sözleşmeler</a>
+        <a href="#calculator">SLA Simülatörü</a>
+        <a href="#guide">Mühendis Rehberi</a>
+        <a href="https://github.com/aliturgutbozkurt/telecom-saas-contracts-sla" target="_blank">GitHub Deposu</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
