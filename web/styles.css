@@ -1,4 +1,34 @@
 :root {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --border-color: #e2e8f0;
+  --border-focus: rgba(2, 132, 199, 0.4);
+  
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  
+  --accent-cyan: #0284c7;
+  --accent-blue: #2563eb;
+  --accent-purple: #7c3aed;
+  --accent-green: #059669;
+  --accent-orange: #d97706;
+  --accent-red: #dc2626;
+  
+  --gradient-brand: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #7c3aed 100%);
+  --gradient-card: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  --shadow-glow: 0 0 35px rgba(2, 132, 199, 0.12);
+  
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+}
+
+body.dark-theme {
   --bg-primary: #070a12;
   --bg-secondary: #0d1322;
   --bg-card: rgba(17, 24, 39, 0.7);
@@ -20,12 +50,6 @@
   --gradient-brand: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #8b5cf6 100%);
   --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
   --shadow-glow: 0 0 35px rgba(0, 242, 254, 0.15);
-  
-  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
 }
 
 * {
@@ -57,9 +81,13 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(7, 10, 18, 0.8);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-theme .navbar {
+  background: rgba(7, 10, 18, 0.8);
 }
 
 .nav-container {
@@ -97,21 +125,30 @@ body {
 .brand-title {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+body.dark-theme .brand-title {
+  color: #fff;
 }
 
 .badge-tag {
   font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 242, 254, 0.15);
+  background: rgba(2, 132, 199, 0.15);
   color: var(--accent-cyan);
   padding: 2px 8px;
   border-radius: 99px;
-  border: 1px solid rgba(0, 242, 254, 0.3);
+  border: 1px solid rgba(2, 132, 199, 0.3);
+}
+
+body.dark-theme .badge-tag {
+  background: rgba(0, 242, 254, 0.15);
+  border-color: rgba(0, 242, 254, 0.3);
 }
 
 .brand-subtitle {
@@ -137,7 +174,7 @@ body {
 
 .nav-link:hover, .nav-link.active {
   color: var(--accent-cyan);
-  background: rgba(0, 242, 254, 0.08);
+  background: rgba(2, 132, 199, 0.08);
 }
 
 .nav-actions {
@@ -146,12 +183,36 @@ body {
   gap: 12px;
 }
 
+.theme-btn {
+  background: rgba(2, 132, 199, 0.1);
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.theme-btn:hover {
+  background: var(--accent-blue);
+  color: #ffffff;
+}
+
 .lang-switch {
   display: flex;
-  background: rgba(255, 255, 255, 0.05);
+  background: #f1f5f9;
   border-radius: var(--radius-sm);
   padding: 2px;
   border: 1px solid var(--border-color);
+}
+
+body.dark-theme .lang-switch {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .lang-btn {
@@ -175,7 +236,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.05);
   color: var(--text-primary);
   text-decoration: none;
   font-size: 0.85rem;
@@ -186,7 +247,15 @@ body {
   transition: all 0.2s ease;
 }
 
+body.dark-theme .github-btn {
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .github-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+body.dark-theme .github-btn:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.2);
 }
